@@ -1,7 +1,7 @@
 ![Logo do projeto](https://raw.githubusercontent.com/LandGabriel/Eritroblasto-Calculator/main/CalcEri.png)
 
 # Calculador de Eritroblastos
-
+:mag_right: [Veja o projeto](https://landgabriel.github.io/Eritroblasto-Calculator/Eritroblasto.html)
 ## 🔥 Introdução
 Utilizado por profissionais da área da saúde, eritroblastos são células hematológicas encontrada em algumas patologias. 
 
