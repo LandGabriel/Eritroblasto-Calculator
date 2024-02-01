@@ -99,21 +99,21 @@ font-size: 15px;
 }
 
 footer {
-        position: fixed;
-        bottom: 0;
-        left: 0; 
-        width: 100%;
-        color: #fff;
-        text-align: center; 
-        padding: 10px;
-        font-size: 10px;
-    }
+    position: fixed;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
 
 /* Para resoluções entre 414px e 896px */
 @media screen and (max-width: 896px) {
-   body {
-    overflow: hidden;
-}
+  body {
+        overflow: auto; 
+    }
     #calculator {
         padding: 20px;
     }
@@ -149,6 +149,8 @@ footer {
 
     footer {
         font-size: 8px;
+        position: relative; 
+        bottom: auto; 
     }
 }
 
@@ -187,7 +189,9 @@ footer {
         padding: 6px;
     }
 
-    footer {
+     footer {
         font-size: 6px;
+        position: relative; 
+        bottom: auto; 
     }
 }
