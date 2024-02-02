@@ -3,19 +3,18 @@
     --linear-gradient: linear-gradient(20deg, #c53838, #991111, #5151e9);
 }
 * {
-    
+
     font-family: 'Poppins', sans-serif;
+
     margin: 0;
     padding: 5;
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
+
 #container {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,13 +22,14 @@ body {
     color: #d1d5db
 }   
 #calculator {
+    max-width: 600px;
 background-color: rgb(20, 20, 48); 
-padding: 40px;
 border-radius: 20px;
 box-shadow: 10px 10px rgba(0,0,0,0,323);
 display: flex;
 flex-direction: column;
 gap: 25px;
+padding: 5%;
 }
 #calculator h2 {
     font-size: 30px;    
@@ -40,9 +40,9 @@ gap: 25px;
         position: absolute;
         content: '';
         height: 5px;
-width: 425px;
 background:var(--linear-gradient);
 bottom: 5px;
+width: 70%
 }
 
 #input_box {
@@ -62,7 +62,7 @@ font-size: 15px;
  font-weight: 500; 
  font-size: medium;
  color: #fff
- 
+
 
 }
 
@@ -74,7 +74,7 @@ font-size: 15px;
     padding: 5px;   
  color: #fff;
 }
-    
+
 
 .input-field input:focus {
     outline: none;
@@ -99,99 +99,99 @@ font-size: 15px;
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: 10px;
-}
-
-
-/* Para resoluções entre 414px e 896px */
-@media screen and (max-width: 896px) {
-  body {
-        overflow: auto; 
-    }
-    #calculator {
-        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        width: 100%;
+        color: #fff;
+        text-align: center; 
+        padding: 10px;
+        font-size: 10px;
     }
 
-    #calculator h2 {
-        font-size: 24px;
-    }
-
-    #calculator h2::before {
-        width: 325px;
-    }
-
-    .input-field label {
-        font-size: 14px;
-    }
-
-    .input-field input {
-        font-size: 18px;
-    }
-
-    #result {
-        font-size: 16px;
-    }
-
-    #total {
-        font-size: 20px;
-    }
-
-    #calculate {
-        font-size: 18px;
-        padding: 8px;
-    }
-
-    footer {
-        font-size: 8px;
-        position: relative; 
-        bottom: auto; 
-    }
-}
-
-
-@media screen and (max-width: 414px) {
-    #calculator {
-        padding: 15px;
-    }
-
-    #calculator h2 {
-        font-size: 20px;
-    }
-
-    #calculator h2::before {
-        width: 225px;
-    }
-
-    .input-field label {
-        font-size: 12px;
-    }
-
-    .input-field input {
-        font-size: 16px;
-    }
-
-    #result {
-        font-size: 14px;
-    }
-
-    #total {
-        font-size: 18px;
-    }
-
-    #calculate {
-        font-size: 16px;
-        padding: 6px;
-    }
-
-     footer {
-        font-size: 6px;
-        position: relative; 
-        bottom: auto; 
-    }
-}
+    @media screen and (max-width: 896px) {
+        body {
+              overflow: auto; 
+          }
+          #calculator {
+              padding: 20px;
+          }
+      
+          #calculator h2 {
+              font-size: 24px;
+          }
+      
+          #calculator h2::before {
+              width: 325px;
+          }
+      
+          .input-field label {
+              font-size: 14px;
+          }
+      
+          .input-field input {
+              font-size: 18px;
+          }
+      
+          #result {
+              font-size: 16px;
+          }
+      
+          #total {
+              font-size: 20px;
+          }
+      
+          #calculate {
+              font-size: 18px;
+              padding: 8px;
+          }
+      
+          footer {
+              font-size: 8px;
+              position: relative; 
+              bottom: auto; 
+          }
+      }
+      
+      
+      @media screen and (max-width: 414px) {
+          #calculator {
+              padding: 15px;
+              width: 100%;
+          }
+      
+          #calculator h2 {
+              font-size: 20px;
+          }
+      
+          #calculator h2::before {
+              width: 225px;
+          }
+      
+          .input-field label {
+              font-size: 12px;
+          }
+      
+          .input-field input {
+              font-size: 16px;
+          }
+      
+          #result {
+              font-size: 14px;
+          }
+      
+          #total {
+              font-size: 18px;
+          }
+      
+          #calculate {
+              font-size: 16px;
+              padding: 6px;
+          }
+      
+           footer {
+              font-size: 6px;
+              position: relative; 
+              bottom: auto; 
+          }
+      }
